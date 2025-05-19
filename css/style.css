@@ -25,3 +25,45 @@ header img {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+
+article {
+    padding: 10px;
+    border: 1px solid #95a4a5;
+    width: 370px;
+}
+
+article > h2 {
+    background-color: #95a4a5;
+    color: white;
+    text-align: center;
+    line-height: 2.5;
+    margin: -10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+article > div {
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0; /* com duas unidade a primeira é aplicada no topo/baixo a segudda na esquerda/direita*/
+}
+
+article > ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0; /*margem  sobreposta*/
+}
+
+article > ul > li {
+    text-align: center;
+}
+
+article > footer {
+    text-align: center;
+}
+
+#planos {
+    padding: 80px 0;
+}
