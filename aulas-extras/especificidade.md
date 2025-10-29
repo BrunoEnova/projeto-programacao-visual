@@ -173,3 +173,67 @@ header .logo {
   </body>
 </html>
 ```
+
+### Atividade
+
+Perfeito! 🎯
+Aqui vai uma atividade completa sobre especificidade em CSS, pronta para ser usada em aula, trabalhos ou estudos individuais — com enunciado, instruções, código base e perguntas.
+
+# 🧠 Atividade: Entendendo a Especificidade em CSS
+
+## 🎯 Objetivo
+
+Compreender como o navegador decide **qual regra CSS tem prioridade** quando múltiplas regras afetam o mesmo elemento.
+
+---
+
+## 🧩 Instruções
+
+1. Analise o código HTML e CSS abaixo.
+2. **Preveja** qual será o estilo final de cada elemento.
+3. **Explique** por que essa regra foi aplicada, com base na especificidade.
+4. Faça modificações sugeridas para testar o comportamento do CSS.
+
+---
+
+## 💻 Código base
+
+### HTML
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Especificidade CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="titulo" class="destaque">Bem-vindo!</h1>
+    <p class="texto">Este é um parágrafo de exemplo.</p>
+    <p id="mensagem" class="texto especial">Mensagem importante!</p>
+    <button class="botao">Clique aqui</button>
+  </body>
+</html>
+
+CSS /* Regra 1 */ p { color: blue; } /* Regra 2 */ .texto { color: red; } /*
+Regra 3 */ #mensagem { color: green; } /* Regra 4 */ p.especial { color: purple;
+} /* Regra 5 */ #mensagem.texto { color: orange; } /* Regra 6 */ button {
+background: gray; } /* Regra 7 */ .botao { background: yellow; } /* Regra 8
+(inline simulada) */ /* Imagine que no HTML o botão tivesse: style="background:
+pink;" */ 🧮 Parte 1 – Cálculo de especificidade Complete a tabela a seguir:
+Regra Seletor Especificidade Cor/Estilo aplicado 1 p 2 .texto 3 #mensagem 4
+p.especial 5 #mensagem.texto 6 button 7 .botao 8 style="" (inline) 🧠 Parte 2 –
+Questões Qual será a cor final do parágrafo com o texto “Mensagem importante!”?
+Por que a regra #mensagem.texto tem prioridade sobre .texto? Se adicionarmos
+!important em .texto, qual regra vencerá? O que aconteceria se trocássemos a
+ordem das regras #mensagem e #mensagem.texto no CSS? No botão, qual cor de fundo
+será exibida se adicionarmos style="background: pink;" no HTML? 🧩 Parte 3 –
+Desafio extra Ajuste o código para que: Todos os parágrafos tenham cor azul,
+exceto o que tem id="mensagem", que deve ficar roxo. O botão tenha fundo verde,
+mas mude para vermelho quando o mouse passar por cima (:hover). Use seletores
+com a menor especificidade possível! 🏁 Conclusão Após completar a atividade,
+você deve ser capaz de: ✅ Explicar como o CSS calcula a especificidade. ✅
+Prever qual regra será aplicada em conflitos de estilo. ✅ Utilizar seletores de
+forma inteligente para evitar !important.
+```
