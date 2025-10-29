@@ -9,3 +9,4 @@
 - [Unidade de medida: %](aulas-extras/porcetagem.md)
 - [Meta Tag View Port](aula-extras/viewport.md)
 - [Layout fixo e fluído](aula-extras/layout-ff.md)
+- [Especificidade](aula-extras/especificidade.md)

@@ -25,13 +25,9 @@ header img {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 article {
   padding: 10px;
   border: 1px solid #95a4a5;
-  width: 370px;
-  float: left;
-  margin-right: 30px;
 }
 
 /*
